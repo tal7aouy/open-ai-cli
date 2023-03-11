@@ -1,0 +1,16 @@
+<?php
+require 'vendor/autoload.php';
+
+use Dotenv\Dotenv;
+use Tal7aouy\Command\Chat;
+use Symfony\Component\Console\Application;
+
+$dotenv = Dotenv::createUnsafeImmutable(__DIR__);
+$dotenv->load();
+$dotenv->required(['OPEN_AI_API_KEY']);
+
+$appName = 'ChatGPT CLI Tool';
+$version = '1.0.0';
+$application = new Application($appName, $version);
+$application->add(new Chat());
+$application->run();
