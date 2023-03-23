@@ -66,7 +66,7 @@ php openai --version
 ## DEPENDENCIES:
 
 - [openai-php/client](https://github.com/openai-php/client): Supercharged community PHP API client that allows you to interact with the Open AI API.
-- [symfony/openai](https://github.com/symfony/openai): The openai component eases the creation of beautiful and testable command line interfaces.
+- [symfony/console](https://github.com/symfony/console): The console component eases the creation of beautiful and testable command line interfaces.
 - [vlucas/phpdotenv](https://github.com/vlucas/phpdotenv): Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.
 
 ## CONFIGURE YOUR OPEN AI ACCOUNT:
